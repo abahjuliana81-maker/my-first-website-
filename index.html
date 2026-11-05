@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fresh Cuts Barbershop</title>
+  <style>@media (max-width: 600px) {
+  nav { flex-direction: column; gap: 8px; }
+  nav a { margin: 0 8px; }
+  .hero { padding: 50px 20px; }
+  .hero h1 { font-size: 28px; }
+  .card { width: 100%; }
+}
+    * { box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      color: #222;
+      line-height: 1.6;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 24px;
+      background: #111;
+    }
+    .logo { color: white; font-weight: bold; font-size: 20px; }
+    nav a { color: white; text-decoration: none; margin-left: 16px; }
+
+    .hero {
+      background: #1a5fb4;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h1 { font-size: 36px; margin: 0 0 12px; }
+    .btn {
+      display: inline-block;
+      background: #f5a623;
+      color: #111;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 16px;
+    }
+
+    .services {
+      padding: 50px 20px;
+      text-align: center;
+      background: #f4f1ea;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card {
+      background: white;
+      padding: 24px;
+      border-radius: 30px;
+      width: 240px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .card h3 { margin-top: 0; color: #gold,black,white; }
+
+    .contact {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <span class="logo">Fresh Cuts</span>
+    <div>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Sharp Cuts. Fair Prices.</h1>
+    <p>Walk in looking tired, walk out looking great.</p>
+    <a class="btn" href="#contact">Book Now</a>
+  </section>
+
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Haircut</h3>
+        <p>Clean, classic styles for all ages.</p>
+      </div>
+      <div class="card">
+        <h3>Beard Trim</h3>
+        <p>Shaped and finished with care.</p>
+      </div>
+      <div class="card">
+        <h3>Kids Cut</h3>
+        <p>Friendly service for little ones.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Call: 000-000-0000</p>
+    <p>Open Mon-Sat, 9am to 7pm</p>
+    <a class="btn" href="#">Call Now</a>
+  </section>
+
+  <footer>
+    <p>© 2026 Fresh Cuts Barbershop. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
